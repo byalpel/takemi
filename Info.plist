@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleExecutable</key>
+    <string>TakeMi</string>
+    <key>CFBundleIdentifier</key>
+    <string>com.takemi.app</string>
+    <key>CFBundleName</key>
+    <string>TakeMi</string>
+    <key>CFBundleIconFile</key>
+    <string>AppIcon</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.0</string>
+    <key>CFBundleVersion</key>
+    <string>1</string>
+    <key>LSMinimumSystemVersion</key>
+    <string>13.0</string>
+    <key>NSCameraUsageDescription</key>
+    <string>TakeMi needs camera access to take your daily portrait.</string>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>TakeMi needs access to save photos.</string>
+    <key>LSUIElement</key>
+    <true/>
+</dict>
+</plist>

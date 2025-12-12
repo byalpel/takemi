@@ -1,0 +1,81 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "PackageStructure": ["<PackageStructure>"]
+  "TakeMi-arm64-apple-macosx15.0-debug.exe": ["<TakeMi-arm64-apple-macosx15.0-debug.exe>"]
+  "TakeMi-arm64-apple-macosx15.0-debug.module": ["<TakeMi-arm64-apple-macosx15.0-debug.module>"]
+  "main": ["<TakeMi-arm64-apple-macosx15.0-debug.exe>","<TakeMi-arm64-apple-macosx15.0-debug.module>"]
+  "test": ["<TakeMi-arm64-apple-macosx15.0-debug.exe>","<TakeMi-arm64-apple-macosx15.0-debug.module>"]
+default: "main"
+nodes:
+  "/Users/david/Sites/test-gemini/Sources/TakeMi/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi":
+    is-mutated: true
+commands:
+  "/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi-entitlement.plist":
+    tool: write-auxiliary-file
+    inputs: ["<entitlement-plist>","<com.apple.security.get-task-allow>"]
+    outputs: ["/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi-entitlement.plist"]
+    description: "Write auxiliary file /Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi-entitlement.plist"
+
+  "/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/david/Sites/test-gemini/Sources/TakeMi/Models/PhotoManager.swift","/Users/david/Sites/test-gemini/Sources/TakeMi/Models/SettingsManager.swift","/Users/david/Sites/test-gemini/Sources/TakeMi/Services/CameraService.swift","/Users/david/Sites/test-gemini/Sources/TakeMi/Services/Scheduler.swift","/Users/david/Sites/test-gemini/Sources/TakeMi/Services/VideoGenerator.swift","/Users/david/Sites/test-gemini/Sources/TakeMi/TakeMiApp.swift","/Users/david/Sites/test-gemini/Sources/TakeMi/Views/CaptureView.swift","/Users/david/Sites/test-gemini/Sources/TakeMi/Views/GalleryView.swift","/Users/david/Sites/test-gemini/Sources/TakeMi/Views/SettingsView.swift"]
+    outputs: ["/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/sources"]
+    description: "Write auxiliary file /Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/sources"
+
+  "/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/CameraService.swift.o","/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/CaptureView.swift.o","/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/GalleryView.swift.o","/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/PhotoManager.swift.o","/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/Scheduler.swift.o","/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/SettingsManager.swift.o","/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/SettingsView.swift.o","/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/TakeMiApp.swift.o","/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/VideoGenerator.swift.o"]
+    outputs: ["/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.product/Objects.LinkFileList"
+
+  "/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"]
+    outputs: ["/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+
+  "<TakeMi-arm64-apple-macosx15.0-debug.exe>":
+    tool: phony
+    inputs: ["<TakeMi-arm64-apple-macosx15.0-debug.exe-CodeSigning>"]
+    outputs: ["<TakeMi-arm64-apple-macosx15.0-debug.exe>"]
+
+  "<TakeMi-arm64-apple-macosx15.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/PhotoManager.swift.o","/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/SettingsManager.swift.o","/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/CameraService.swift.o","/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/Scheduler.swift.o","/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/VideoGenerator.swift.o","/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/TakeMiApp.swift.o","/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/CaptureView.swift.o","/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/GalleryView.swift.o","/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/SettingsView.swift.o","/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/Modules/TakeMi.swiftmodule"]
+    outputs: ["<TakeMi-arm64-apple-macosx15.0-debug.module>"]
+
+  "C.TakeMi-arm64-apple-macosx15.0-debug.exe":
+    tool: shell
+    inputs: ["/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/CameraService.swift.o","/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/CaptureView.swift.o","/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/GalleryView.swift.o","/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/PhotoManager.swift.o","/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/Scheduler.swift.o","/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/SettingsManager.swift.o","/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/SettingsView.swift.o","/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/TakeMiApp.swift.o","/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/VideoGenerator.swift.o","/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.product/Objects.LinkFileList"]
+    outputs: ["/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi"]
+    description: "Linking ./.build/arm64-apple-macosx/debug/TakeMi"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-L","/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug","-o","/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi","-module-name","TakeMi","-Xlinker","-no_warn_duplicate_libraries","-emit-executable","-Xlinker","-alias","-Xlinker","_TakeMi_main","-Xlinker","_main","-Xlinker","-rpath","-Xlinker","@loader_path","@/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.product/Objects.LinkFileList","-Xlinker","-rpath","-Xlinker","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift-6.2/macosx","-target","arm64-apple-macosx13.0","-Xlinker","-add_ast_path","-Xlinker","/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/Modules/TakeMi.swiftmodule","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g"]
+
+  "C.TakeMi-arm64-apple-macosx15.0-debug.exe-entitlements":
+    tool: shell
+    inputs: ["/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi","/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi-entitlement.plist"]
+    outputs: ["<TakeMi-arm64-apple-macosx15.0-debug.exe-CodeSigning>"]
+    description: "Applying debug entitlements to ./.build/arm64-apple-macosx/debug/TakeMi"
+    args: ["codesign","--force","--sign","-","--entitlements","/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi-entitlement.plist","/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi"]
+
+  "C.TakeMi-arm64-apple-macosx15.0-debug.module":
+    tool: shell
+    inputs: ["/Users/david/Sites/test-gemini/Sources/TakeMi/Models/PhotoManager.swift","/Users/david/Sites/test-gemini/Sources/TakeMi/Models/SettingsManager.swift","/Users/david/Sites/test-gemini/Sources/TakeMi/Services/CameraService.swift","/Users/david/Sites/test-gemini/Sources/TakeMi/Services/Scheduler.swift","/Users/david/Sites/test-gemini/Sources/TakeMi/Services/VideoGenerator.swift","/Users/david/Sites/test-gemini/Sources/TakeMi/TakeMiApp.swift","/Users/david/Sites/test-gemini/Sources/TakeMi/Views/CaptureView.swift","/Users/david/Sites/test-gemini/Sources/TakeMi/Views/GalleryView.swift","/Users/david/Sites/test-gemini/Sources/TakeMi/Views/SettingsView.swift","/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/sources"]
+    outputs: ["/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/PhotoManager.swift.o","/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/SettingsManager.swift.o","/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/CameraService.swift.o","/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/Scheduler.swift.o","/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/VideoGenerator.swift.o","/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/TakeMiApp.swift.o","/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/CaptureView.swift.o","/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/GalleryView.swift.o","/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/SettingsView.swift.o","/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/Modules/TakeMi.swiftmodule"]
+    description: "Compiling Swift Module 'TakeMi' (9 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","TakeMi","-emit-dependencies","-emit-module","-emit-module-path","/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/Modules/TakeMi.swiftmodule","-output-file-map","/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/output-file-map.json","-incremental","-c","@/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/sources","-I","/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx13.0","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-j14","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-Xfrontend","-entry-point-function-name","-Xfrontend","TakeMi_main","-color-diagnostics","-swift-version","5","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","test_gemini"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/david/Sites/test-gemini/Sources/TakeMi/","/Users/david/Sites/test-gemini/Package.swift","/Users/david/Sites/test-gemini/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+

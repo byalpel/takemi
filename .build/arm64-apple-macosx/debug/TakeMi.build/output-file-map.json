@@ -1,0 +1,68 @@
+{
+  "": {
+    "swift-dependencies": "/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/master.swiftdeps"
+  },
+  "/Users/david/Sites/test-gemini/Sources/TakeMi/Models/PhotoManager.swift": {
+    "dependencies": "/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/PhotoManager.d",
+    "object": "/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/PhotoManager.swift.o",
+    "swiftmodule": "/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/PhotoManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/PhotoManager.swiftdeps",
+    "diagnostics": "/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/PhotoManager.dia"
+  },
+  "/Users/david/Sites/test-gemini/Sources/TakeMi/Models/SettingsManager.swift": {
+    "dependencies": "/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/SettingsManager.d",
+    "object": "/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/SettingsManager.swift.o",
+    "swiftmodule": "/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/SettingsManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/SettingsManager.swiftdeps",
+    "diagnostics": "/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/SettingsManager.dia"
+  },
+  "/Users/david/Sites/test-gemini/Sources/TakeMi/Services/CameraService.swift": {
+    "dependencies": "/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/CameraService.d",
+    "object": "/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/CameraService.swift.o",
+    "swiftmodule": "/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/CameraService~partial.swiftmodule",
+    "swift-dependencies": "/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/CameraService.swiftdeps",
+    "diagnostics": "/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/CameraService.dia"
+  },
+  "/Users/david/Sites/test-gemini/Sources/TakeMi/Services/Scheduler.swift": {
+    "dependencies": "/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/Scheduler.d",
+    "object": "/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/Scheduler.swift.o",
+    "swiftmodule": "/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/Scheduler~partial.swiftmodule",
+    "swift-dependencies": "/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/Scheduler.swiftdeps",
+    "diagnostics": "/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/Scheduler.dia"
+  },
+  "/Users/david/Sites/test-gemini/Sources/TakeMi/Services/VideoGenerator.swift": {
+    "dependencies": "/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/VideoGenerator.d",
+    "object": "/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/VideoGenerator.swift.o",
+    "swiftmodule": "/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/VideoGenerator~partial.swiftmodule",
+    "swift-dependencies": "/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/VideoGenerator.swiftdeps",
+    "diagnostics": "/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/VideoGenerator.dia"
+  },
+  "/Users/david/Sites/test-gemini/Sources/TakeMi/TakeMiApp.swift": {
+    "dependencies": "/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/TakeMiApp.d",
+    "object": "/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/TakeMiApp.swift.o",
+    "swiftmodule": "/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/TakeMiApp~partial.swiftmodule",
+    "swift-dependencies": "/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/TakeMiApp.swiftdeps",
+    "diagnostics": "/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/TakeMiApp.dia"
+  },
+  "/Users/david/Sites/test-gemini/Sources/TakeMi/Views/CaptureView.swift": {
+    "dependencies": "/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/CaptureView.d",
+    "object": "/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/CaptureView.swift.o",
+    "swiftmodule": "/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/CaptureView~partial.swiftmodule",
+    "swift-dependencies": "/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/CaptureView.swiftdeps",
+    "diagnostics": "/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/CaptureView.dia"
+  },
+  "/Users/david/Sites/test-gemini/Sources/TakeMi/Views/GalleryView.swift": {
+    "dependencies": "/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/GalleryView.d",
+    "object": "/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/GalleryView.swift.o",
+    "swiftmodule": "/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/GalleryView~partial.swiftmodule",
+    "swift-dependencies": "/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/GalleryView.swiftdeps",
+    "diagnostics": "/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/GalleryView.dia"
+  },
+  "/Users/david/Sites/test-gemini/Sources/TakeMi/Views/SettingsView.swift": {
+    "dependencies": "/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/SettingsView.d",
+    "object": "/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/SettingsView.swift.o",
+    "swiftmodule": "/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/SettingsView~partial.swiftmodule",
+    "swift-dependencies": "/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/SettingsView.swiftdeps",
+    "diagnostics": "/Users/david/Sites/test-gemini/.build/arm64-apple-macosx/debug/TakeMi.build/SettingsView.dia"
+  }
+}
